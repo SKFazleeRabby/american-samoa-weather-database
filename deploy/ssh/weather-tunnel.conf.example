@@ -1,0 +1,17 @@
+# Install on the DATABASE Droplet as /etc/ssh/sshd_config.d/60-weather-tunnel.conf.
+# Keep an administrator SSH session open, then: sudo sshd -t && sudo systemctl reload ssh
+# This account must not belong to sudo or docker groups.
+Match User weather-tunnel
+    AuthenticationMethods publickey
+    PasswordAuthentication no
+    KbdInteractiveAuthentication no
+    AllowTcpForwarding local
+    AllowStreamLocalForwarding no
+    PermitOpen 127.0.0.1:5432
+    PermitListen none
+    AllowAgentForwarding no
+    X11Forwarding no
+    PermitTTY no
+    PermitTunnel no
+    MaxSessions 0
+Match all

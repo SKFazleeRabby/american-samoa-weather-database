@@ -1,0 +1,38 @@
+Station,Station ID,Observer,Elevetaion,Latitude,Longitude,Category,Status,API source
+Aasu Uh,1312,UH,353.9,-14.30980833,-170.7715583,weather,active,mesonet
+Aasufou80,,USGS,408.4,-14.31393611,-170.7701056,weather,inactive,
+Aasufou90,,USGS,402.3,-14.31421389,-170.7712167,weather,inactive,
+Afono Uh,1316,UH,81.1,-14.26737778,-170.6506194,weather,active,mesonet
+Airport5101,,NWS,3.0,-14.33166667,-170.7141667,weather,active,synoptic
+Airport80,,USGS,7.6,-14.3369266,-170.7209097,weather,inactive,
+Aoloafou,,USGS,408.4,-14.30949167,-170.7739944,weather,inactive,
+Aua,,USGS,73.2,-14.26755,-170.6606611,weather,inactive,
+Aunuu,,USGS,42.7,-14.28532778,-170.5534389,weather,inactive,
+Aunuu Uh,1319,UH,39.0,-14.28516111,-170.5535361,weather,active,mesonet
+Fagaitua,,USGS,48.8,-14.26727222,-170.61705,weather,inactive,
+Gml Smo,,NOAA,138.0,-14.2474,-170.5644,weather,active,
+Iliili,,USGS,61.0,-14.34180556,-170.7469444,weather,inactive,
+Malaeimi,,USGS,45.7,-14.31166667,-170.7327778,weather,inactive,
+Maloata,,USGS,39.6,-14.30726944,-170.8126056,weather,inactive,
+Masefau,,USGS,222.5,-14.26055556,-170.62,weather,inactive,
+Matatula,,USGS,79.2,-14.24699722,-170.5642722,weather,inactive,
+Mt Alava,,USGS,490.7,-14.26560556,-170.6889944,weather,inactive,
+Nws,,NOAA,2.7,-14.331,-170.7105,weather,inactive,
+Pioa Afono,,USGS,265.2,-14.26643889,-170.6559389,weather,inactive,
+Poloa Uh,1311,UH,146.0,-14.31958056,-170.8306889,weather,active,mesonet
+Satala,,USGS,1.5,-14.27060556,-170.6939944,weather,inactive,
+Siufaga Wrcc,,WRCC,146.3,-14.276111,-170.721944,weather,active,wrcc
+Toa Ridge Wrcc,,WRCC,391.7,-14.261131,-170.687222,weather,active,wrcc
+Vaipito Res,,USGS,93.0,-14.28294444,-170.7101944,weather,inactive,
+Vaipito Uh,1313,UH,89.9,-14.282975,-170.7106361,weather,active,mesonet
+Vaipito2000,,USGS,140.2,-14.28866111,-170.70705,weather,inactive,
+Fagalii_stream,,,,,,stream,inactive,
+Nuuuli_stream,,,,,,stream,inactive,
+Fagaalu_stream,,,,,,stream,inactive,
+Fagasa_stream,,,,,,stream,inactive,
+Leone_stream,,,,,,stream,inactive,
+Vaipito_stream,,,,,,stream,inactive,
+Malota_stream,,,,,,stream,inactive,
+Afono_stream,,,,,,stream,inactive,
+Fagaitua_stream,,,,,,stream,inactive,
+Tula_stream,,,,,,stream,inactive,

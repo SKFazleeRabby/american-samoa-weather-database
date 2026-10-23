@@ -1,0 +1,7 @@
+Variable Name,Code,Mesonet Code,Synoptic Code,Type,Unit,Network
+Precipitation,precipitation,RF_1_Tot300s,precipitation,weather,mm,synoptic
+Air Temperature,air_temp,Tair_1_Avg,air_temp,weather,°C,synoptic
+Relative Humidity,relative_humidity,RH_1_Avg,relative_humidity,weather,%,synoptic
+Solar Radiation,solar_radiation,Rin_1_Avg,solar_radiation,weather,W/m²,synoptic
+Soil Moisture,soil_moisture,SM_1_Avg,soil_moisture,weather,%,synoptic
+Stream Stage,stream_stage,,,stream,meter,

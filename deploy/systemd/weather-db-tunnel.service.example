@@ -1,0 +1,22 @@
+# Install on the AI SERVER as /etc/systemd/system/weather-db-tunnel.service.
+# Replace DROPLET_IP; requires the weather-ai local user and a verified known_hosts.
+[Unit]
+Description=SSH tunnel to the weather database
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=weather-ai
+ExecStart=/usr/bin/ssh -NT -i /var/lib/weather-ai/.ssh/id_ed25519 -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/var/lib/weather-ai/.ssh/known_hosts -o ExitOnForwardFailure=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -L 127.0.0.1:15432:127.0.0.1:5432 weather-tunnel@DROPLET_IP
+Restart=always
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,31 @@
+# Production overlay: docker compose -f compose.yaml -f compose.public.yaml up --build -d
+services:
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      PUBLIC_SITE_ADDRESS: ${PUBLIC_SITE_ADDRESS:-:80}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - public_web
+    depends_on:
+      web:
+        condition: service_healthy
+
+  web:
+    networks:
+      - default
+      - public_web
+
+networks:
+  public_web:
+
+volumes:
+  caddy_data:
+  caddy_config:

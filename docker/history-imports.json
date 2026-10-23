@@ -1,0 +1,35 @@
+{
+  "station_timezone": "Pacific/Pago_Pago",
+  "datasets": [
+    {
+      "file": "data/as_rainfall_1966_04_2026_09.csv",
+      "variable_code": "RF_1_Tot300s",
+      "interval_seconds": 86400
+    },
+    {
+      "file": "data/as_temperature_1999_12_2026_09.csv",
+      "variable_code": "Tair_1_Avg",
+      "interval_seconds": 86400
+    },
+    {
+      "file": "data/as_relative_humidity_1999_12_2026_09.csv",
+      "variable_code": "RH_1_Avg",
+      "interval_seconds": 86400
+    },
+    {
+      "file": "data/as_solar_radiation_1999_12_2026_09.csv",
+      "variable_code": "Rin_1_Avg",
+      "interval_seconds": 86400
+    },
+    {
+      "file": "data/as_soil_moisture_2024_02_2026_08.csv",
+      "variable_code": "soil_moisture",
+      "interval_seconds": 86400
+    },
+    {
+      "file": "data/as_stream_stage_2016_03_2026_08.csv",
+      "variable_code": "stream_stage",
+      "interval_seconds": 86400
+    }
+  ]
+}

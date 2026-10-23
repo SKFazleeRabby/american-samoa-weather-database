@@ -1,0 +1,16 @@
+{
+    admin off
+}
+
+{$PUBLIC_SITE_ADDRESS} {
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        -Server
+    }
+
+    # Browsing, API queries, and streaming downloads are public; no login required.
+    # Only the application is reachable here. No database or pgAdmin proxy routes.
+    # :80 serves a public IP over HTTP. A domain name enables automatic HTTPS.
+    reverse_proxy web:8000
+}
